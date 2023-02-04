@@ -6,7 +6,11 @@
     <hr>
     <a href="{% url 'card-update' card.id %}" role="button">
         ✏ Edit Card
+    </a><hr>
+    <a href="{% url 'card-Delete' card.id %}" role="button" >
+        ✏ Delete
     </a>
+    <!-- onclick="return confirm('Are you sure you want to delete this Box?')" -->
     {% else %}
     <details>
         <summary>Reveal Answer</summary>

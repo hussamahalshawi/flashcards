@@ -1,6 +1,6 @@
 import random
 from django.shortcuts import render
-from django.views.generic import (ListView, CreateView,UpdateView,) 
+from django.views.generic import (ListView, CreateView,UpdateView,DeleteView) 
 from django.urls import reverse_lazy
 from .models import Card
 from django.shortcuts import get_object_or_404, redirect
@@ -16,6 +16,11 @@ class CardCreateView(CreateView):
 
 class CardUpdateView(CardCreateView, UpdateView):
     success_url = reverse_lazy("card-list")
+
+class CardDeleteView(DeleteView):
+    model = Card
+    success_url = reverse_lazy("card-list")
+
 # class BoxView(CardListView):
 #     template_name = "cards/box.html"
 #     def get_queryset(self):
@@ -41,3 +46,8 @@ class BoxView(CardListView):
             card = get_object_or_404(Card, id=form.cleaned_data["card_id"])
             card.move(form.cleaned_data["solved"])
         return redirect(request.META.get("HTTP_REFERER"))
+
+# def delete_Box(request, id):
+#     Box = Card.objects.filter(id=id)
+#     Box.delete()
+#     return redirect("/card-list")

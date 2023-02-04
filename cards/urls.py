@@ -22,6 +22,11 @@ urlpatterns = [
         name="card-update"
         ),
     path(
+        "Delete/<int:pk>",
+        views.CardDeleteView.as_view(),
+        name="card-Delete"
+        ),
+    path(
         "box/<int:box_num>",
         views.BoxView.as_view(),
         name="box"
