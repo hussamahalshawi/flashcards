@@ -11,5 +11,11 @@ class Card(models.Model):
     default=BOXES[0],
     )
     date_created = models.DateTimeField(auto_now_add=True)
+    def move(self, solved):
+        new_box = self.box + 1 if solved else BOXES[0]
+        if new_box in BOXES:
+            self.box = new_box
+            self.save()
+        return self
     def __str__(self):
         return self.question

@@ -5,12 +5,15 @@
 <h2>
     All Cards
 </h2>
+<a href="{% url 'card-create' %}" role="button">
+    ✨ Create New Card
+</a>
 {% for card in card_list %}
-    {% ifchanged %}
-        <h3>🗃 {{ card.box | ordinal }} Box</h3>
-    {% endifchanged %}
-    <article>
-        {% include "cards/card.html" %}
-    </article>
-    {% endfor %}
+{% ifchanged %}
+<h3>🗃 {{ card.box | ordinal }} Box</h3>
+{% endifchanged %}
+<article>
+    {% include "cards/card.html" %}
+</article>
+{% endfor %}
 {% endblock content %}
