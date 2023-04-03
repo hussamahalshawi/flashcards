@@ -8,7 +8,7 @@ knows each one in Leitner’s learning box. The learners try to recall the solut
 If they succeed, they send the card to the next group. If they fail, they send it back to the first group.\
 
 # Image
-![Clothes_Online_Store.png](https://hussamahalshawi.pythonanywhere.com/media/image_Project/flashcards.jpg)
-![Clothes_Online_Store.png](https://hussamahalshawi.pythonanywhere.com/media/image_Project/flashcards_1.jpg)
-![Clothes_Online_Store.png](https://hussamahalshawi.pythonanywhere.com/media/image_Project/flashcards_2.jpg)
-![Clothes_Online_Store.png](https://hussamahalshawi.pythonanywhere.com/media/image_Project/flashcards_3.jpg)
+![flashcards.png](https://hussamahalshawi.pythonanywhere.com/media/image_Project/flashcards.jpg)
+![flashcards.png](https://hussamahalshawi.pythonanywhere.com/media/image_Project/flashcards_1.jpg)
+![flashcards.png](https://hussamahalshawi.pythonanywhere.com/media/image_Project/flashcards_2.jpg)
+![flashcards.png](https://hussamahalshawi.pythonanywhere.com/media/image_Project/flashcards_3.jpg)
